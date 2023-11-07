@@ -35,7 +35,7 @@ int main(int argc, char** argv)
     printf("%s\n", "How long?");
     scanf("%d", &length);
 
-    for(int i = 0; i < length; i++)
+    for(int i = 0; i < draws; i++)
     {
         reset(vals);
         shuffle(vals);
