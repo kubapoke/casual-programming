@@ -185,7 +185,8 @@ int main(int argc, char** argv)
 
     readfile(argv[1], instructions, brackets);
 
-/*    printf("%s\n\n", instructions);
+/*
+    printf("%s\n\n", instructions);
 
     for(int i = 0; i<(int)strlen(instructions); i++)
     {
