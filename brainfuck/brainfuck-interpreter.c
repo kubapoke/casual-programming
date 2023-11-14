@@ -126,10 +126,6 @@ void interpret(char* instructions, int* brackets)
 
     while(*ip)
     {
-/*
-        printf("%c\n", *ip);
-        sleep(0.5);
-*/
         switch (*ip)
         {
         case '+':
@@ -184,16 +180,6 @@ int main(int argc, char** argv)
         ERR("The program takes exactly 1 argument (path to the brainfuck file to interpret)", -1);
 
     readfile(argv[1], instructions, brackets);
-
-/*
-    printf("%s\n\n", instructions);
-
-    for(int i = 0; i<(int)strlen(instructions); i++)
-    {
-        printf("%d ",brackets[i]);
-    }
-    printf("%s", "\n\n");
-*/
 
     interpret(instructions, brackets);
 
